@@ -1,8 +1,12 @@
-# Analytics-OKF: Improved AI Agent Queries with OKF Metadata
+# Analytics-OKF: Improved ai agent queries with okf metadata
 
-This project demonstrates how Google's **Open Knowledge Format (OKF)** can increase the reliability of agentic database queries by reducing SQL hallucinations. We use the **Contoso dataset** ingested into **DuckDB**. **LangChain** is used to build an AI agent that queries the data based on metadata from the OKF bundle. 
+This project shows how Google's **Open Knowledge Format (OKF)** can increase reliability of agentic database queries by reducing SQL hallucination of AI agents. As data the known contoso dataset is used and ingested with **DuckDB**. Further **LangChain** is used to build an AI agent that queries the data based on information taken form the OKF. To keep cost as low as possible Google's flash-2.5-lite model is used, which is why an API key from Google is required for the agent to work (store `GOOGLE_API_KEY` in `.env` file).
 
-This project uses the `langchain-google-genai` package. An API key from Google is required (store `GOOGLE_API_KEY` in a `.env` file).
+## Project Status
+
+-   **Data Layer**: WIP. The Contoso dataset has been ingested into `data/contoso.db`.
+-   **OKF Layer**: OPEN. The schema and metric definitions are documented in `okf_bundle/`.
+-   **Agent Layer**: OPEN. The `main.py` script initializes an agent that can answer business questions using the OKF metadata.
 
 ## Project Structure
 
