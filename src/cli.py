@@ -16,9 +16,9 @@ def main():
     args = parser.parse_args()
 
     if args.command == "download":
-        print("Downloading data... (Not implemented yet)")
-        # from src.data_pipeline.download import download_data
-        # download_data()
+        print("Starting data ingestion...")
+        from src.data_pipeline.download import download_data
+        download_data()
     elif args.command == "build":
         print("Building database... (Not implemented yet)")
         # from src.data_pipeline.build import build_database
