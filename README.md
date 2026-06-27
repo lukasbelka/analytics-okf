@@ -4,7 +4,7 @@ This project shows how Google's **Open Knowledge Format (OKF)** can increase rel
 
 ## Project Status
 
--   **Data Layer**: WIP. The Contoso dataset has been ingested into `data/contoso.db`.
+-   **Data Layer**: The "csv-100k.7z" version of the contoso dataset has been downloaded from [sql-bi](https://github.com/sql-bi/Contoso-Data-Generator-V2-data/releases/tag/ready-to-use-data) and ingested into `data/contoso.db`.
 -   **OKF Layer**: OPEN. The schema and metric definitions are documented in `okf_bundle/`.
 -   **Agent Layer**: OPEN. The `main.py` script initializes an agent that can answer business questions using the OKF metadata.
 
