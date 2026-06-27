@@ -47,9 +47,6 @@ The codebase follows a modular Python structure:
 You can use the CLI to interact with the project:
 
 ```bash
-# Download the raw data
-python main.py download
-
 # Build the DuckDB database
 python main.py build
 
