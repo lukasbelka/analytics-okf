@@ -7,8 +7,8 @@ def main():
     # Command: download
     parser_download = subparsers.add_parser("download", help="Download the Contoso dataset CSVs")
     
-    # Command: build
-    parser_build = subparsers.add_parser("build", help="Build the DuckDB database from CSVs")
+    # Command: build_db
+    parser_build = subparsers.add_parser("build_db", help="Build the DuckDB database from CSVs")
     
     # Command: chat
     parser_chat = subparsers.add_parser("chat", help="Start the OKF-Aware AI Agent")
@@ -19,9 +19,9 @@ def main():
         print("Starting data ingestion...")
         from src.data_pipeline.download import download_data
         download_data()
-    elif args.command == "build":
+    elif args.command == "build_db":
         print("Building database...")
-        from src.data_pipeline.build import build_database
+        from src.data_pipeline.build_db import build_database
         build_database()
     elif args.command == "chat":
         print("Starting Agent... (Not implemented yet)")
