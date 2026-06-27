@@ -20,9 +20,9 @@ def main():
         from src.data_pipeline.download import download_data
         download_data()
     elif args.command == "build":
-        print("Building database... (Not implemented yet)")
-        # from src.data_pipeline.build import build_database
-        # build_database()
+        print("Building database...")
+        from src.data_pipeline.build import build_database
+        build_database()
     elif args.command == "chat":
         print("Starting Agent... (Not implemented yet)")
         # from src.agent.core import start_chat

@@ -48,7 +48,7 @@ You can use the CLI to interact with the project:
 
 ```bash
 # Build the DuckDB database
-python main.py build
+python main.py build_db
 
 # Start the interactive AI Agent
 python main.py chat
